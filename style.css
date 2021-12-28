@@ -72,7 +72,7 @@ body {
   background: var(--Very-Dark-Magenta);
   margin: 2vw 6vw;
   padding: 35px 30px;
-  max-width: 330px;
+  max-width: 350px;
   border-radius: 10px;
 }
 .review > .person {
@@ -111,4 +111,59 @@ br {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media (min-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: left;
+    margin: 8vw 7vw 1vw 7vw;
+  }
+  .main {
+    text-align: left;
+  }
+  .main h1 {
+    font-size: 30px;
+    padding: 1vw 0;
+    max-width: 300px;
+  }
+  .main p {
+    padding: 0;
+  }
+  .ratings {
+    margin: 1vw 0 0 0;
+  }
+  .rating {
+    display: flex;
+    flex-direction: row;
+  }
+  .rating > span {
+    margin-left: 2vw;
+  }
+  .rating:nth-child(1) {
+    position: relative;
+    left: -4vw;
+  }
+  .rating:nth-child(3) {
+    position: relative;
+    left: 2vw;
+  }
+  .reviews {
+    flex-direction: row;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    justify-content: center;
+  }
+  .review {
+    margin: 1vw;
+  }
+  .review:nth-child(1) {
+    position: relative;
+    top: -1vw;
+  }
+  .review:nth-child(3) {
+    position: relative;
+    top: 1vw;
+  }
 }
